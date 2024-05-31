@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Avançado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="v">
+        <video src="video.mp4" autoplay defer muted loop></video>
+    </div>
+    <main>
+        <section id="title">
+            <h1>To do Avançado</h1>
+        </section>
+        <section id="adicionar-tarefas">
+            <form class="box" onsubmit="return false;">
+                <label for="adicionar-text">Adicione sua tarefa</label>
+                <div class="text-area">
+                    <input type="text" name="adicionar-text" id="adicionar-text" placeholder="O que você vai fazer?">
+                    <button type="button" id="adicionar-button"></button>
+                </div>
+                <button type="button" id="cancelar-button">Cancelar</button>
+            </form>
+        </section>
+        <section id="pesquisa-filtro">
+            <form onsubmit="return false;">
+                <div id="pesquisa-form" class="box">
+                    <label for="pesquisar">Pesquisar:</label>
+                    <div class="text-area">
+                        <input type="text" name="pesquisar" id="pesquisar" placeholder="Buscar...">
+                        <button type="button" id="pesquisar-button"></button>
+                    </div>
+                </div>
+                <hr>
+                <div id="filtro-form" class="box">
+                    <label for="filtro">Filtrar:</label>
+                    <select name="filtro" id="filtro">
+                        <option value="todos">Todos</option>
+                        <option value="feitos">Feitos</option>
+                        <option value="afazer">A fazer</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+        <section id="todo-list"></section>
+    </main>
+</body>
+</html>
